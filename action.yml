@@ -1,0 +1,10 @@
+name: 'Generate tenant matrix'
+inputs:
+  path:
+    description: 'Path of file is-multi-tenant'
+    required: false
+    default: .cloud/is-multi-tenant
+description: Generate tenant matrix
+runs:
+  using: node12
+  main: dist/index.js
